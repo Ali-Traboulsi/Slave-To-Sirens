@@ -1,0 +1,31 @@
+nav {
+  float: right;
+  margin-right: 7%;
+}
+
+nav ul {
+  list-style-type: none;
+  position: fixed;
+  right: 8%;
+  z-index: 1;
+  line-height: 2.3 !important;
+}
+
+nav ul li .nav-link {
+  color: white;
+  font-weight: bolder;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+nav ul li .nav-link:hover:not(.active) {
+  color: #b03a2a;
+  transition: 0.7s;
+}
+
+@media only screen and (max-width : 480px){
+  nav {
+    position: fixed;
+    left: 31vw;
+  }
+}

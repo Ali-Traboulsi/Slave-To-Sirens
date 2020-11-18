@@ -1,0 +1,106 @@
+@import url("../bio/Bio.css");
+
+.rc-collapse {
+  font-size: large;
+  line-height: 1.5em;
+}
+.my-header-class {
+  padding: 1.7% 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  background-color: rgba(225, 225, 225, 0.1);
+}
+.rc-collapse-item {
+  margin: 5%;
+  position: relative;
+  top: 48px;
+}
+.rc-collapse-header {
+  border: 4px white outset;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.reviews_odd {
+  padding: 5% 13%;
+}
+small {
+  font-size: 75%;
+}
+.rc-collapse-header:hover {
+  border: 3px red double;
+  border-radius: 2px;
+}
+.my-header-class:hover {
+  transform-origin: center;
+}
+
+.rc-collapse-header:after {
+  content: "+";
+  color: white;
+  font-size: xx-large;
+  float: right;
+  margin-right: 3%;
+}
+.rc-collapse-item-active .rc-collapse-header:after {
+  content: "-";
+  color: white;
+  font-size: xx-large;
+  float: right;
+  margin-right: 3%;
+  transition: transform 0.2s ease 0s;
+  transform: rotate(180deg);
+}
+/* .rc-collapse-item-active .rc-collapse-header {
+  background-color: rgba(225, 225, 225, 0.1);
+  
+} */
+.reviews_odd {
+  background-color: rgba(225, 225, 225, 0.3);
+  border-radius: 2px;
+  text-align: center;
+  padding: 5% 0;
+  font-size: 20px;
+}
+.reviews_even {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 5% 0;
+  font-size: 20px;
+}
+p,
+a {
+  color: white;
+}
+
+/*Desktop View*/
+@media only screen and (min-width: 600px) {
+  .reviews {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .rc-collapse-item-active .rc-collapse-header:after {
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+  .rc-collapse-header:after {
+    font-size: 1em;
+  }
+
+  .reviews_odd {
+    background-color: rgba(225, 225, 225, 0.3);
+    border-radius: 2px;
+    text-align: center;
+    padding: 5% 0;
+    font-size: 20px;
+  }
+  .reviews_even {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5% 0;
+    font-size: 20px;
+  }
+}

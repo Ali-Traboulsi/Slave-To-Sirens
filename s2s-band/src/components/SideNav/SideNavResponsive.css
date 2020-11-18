@@ -1,0 +1,50 @@
+/* ...........  Responsive *Mobile* ...........*/
+
+@media only screen and (max-width: 480px) {
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    top: 1.8%;
+    left: 2%;
+  }
+
+  div div.bm-menu-wrap {
+    min-width: 100%;
+  }
+
+  .bm-burger-button {
+    background: transparent;
+    border: transparent;
+    -webkit-animation: spin 0s linear infinite;
+    -moz-animation: spin 0s linear infinite;
+    animation: spin 0s linear infinite;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    border-radius: 0;
+  }
+
+  .bm-burger-button:hover {
+    -webkit-animation: spin 0s linear infinite;
+    -moz-animation: spin 0s linear infinite;
+    animation: spin 0s linear infinite;
+    border: transparent;
+  }
+
+  .bm-burger-button span {
+    visibility: visible;
+  }
+
+  .bm-item {
+    line-height: 1.7 !important;
+  }
+
+  .bm-burger-bars {
+    background: white;
+    border: 1px black solid;
+    padding: 3% 0 7% 0;
+  }
+  .bm-menu {
+    padding: 2.5em 8em 0;
+  }
+}

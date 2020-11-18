@@ -1,0 +1,122 @@
+.footer {
+  max-width: 100vw;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.Logo-position .Logo {
+  width: 30%;
+  position: relative;
+  top: 50%;
+  left: 35%;
+}
+
+.social-media {
+  position: relative;
+  left: 7%;
+  top: 150px;
+}
+
+.social-media img {
+  max-width: 6%;
+  height: auto !important;
+}
+
+.social-media .Facebook-logo {
+  max-width: 7.89%;
+  height: auto !important;
+  margin-top: 6px;
+  border: 5px white double;
+  border-radius: 50%;
+}
+
+.footer-postion {
+  position: relative;
+  bottom: 42px;
+}
+
+.social-media-instagram {
+  position: absolute;
+  left: 20%;
+}
+
+.social-media-instagram img {
+  /* max-width: 14%; */
+  max-width: 18.89%;
+  /* height: auto !important; */
+  margin-top: 6px;
+  border: 5px white double;
+  border-radius: 50%;
+  height: auto !important;
+}
+
+.social-media-instagram img:hover,
+.social-media-whatsapp img:hover,
+.social-media .Facebook-logo:hover,
+.social-media-mail img:hover {
+  border: 2px red double;
+}
+
+.social-media-whatsapp {
+  position: absolute;
+  left: 72%;
+}
+
+.social-media-whatsapp img {
+  max-width: 27.89%;
+  /* height: auto !important; */
+  margin-top: 6px;
+  border: 5px white double;
+  border-radius: 50%;
+  height: auto !important;
+}
+
+.social-media-mail {
+  position: absolute;
+  left: 84%;
+}
+
+.social-media-mail img {
+  max-width: 47.89%;
+  /* height: auto !important; */
+  margin-top: 6px;
+  border: 5px white double;
+  border-radius: 50%;
+  height: auto !important;
+}
+
+.copyright {
+  margin-top: 4px;
+  font-size: 15px;
+}
+
+.copyright a {
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 480px) {
+  .social-media {
+    position: static;
+    text-align: center;
+  }
+  .footer-postion {
+    position: relative;
+    bottom: 0;
+  }
+  .social-media img,
+  .social-media .Facebook-logo {
+    max-width: 20.89%;
+  }
+
+  .Logo-position .Logo {
+    width: 68%;
+    position: relative;
+    left: 16%;
+    margin-top: 10px;
+    margin-bottom: 12vw;
+  }
+}

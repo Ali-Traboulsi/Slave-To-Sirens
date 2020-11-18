@@ -1,0 +1,53 @@
+.Home_bg {
+  background: url("../../images/Home_bg.jpg");
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-size: 100% 100%, cover;
+}
+
+p {
+  color: white;
+}
+
+.copyright {
+  position: relative;
+  left: 23%;
+  top: 95%;
+}
+
+.SideNav {
+  visibility: hidden;
+}
+
+/*............ Responsive (Mobile) ..............*/
+
+@media only screen and (max-width: 480px) {
+  .Home_bg {
+    background: url("../../images/Home_bg_resp.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-size: 100% 100%, cover;
+  }
+
+  .copyright {
+    /* font-size: 15px; */
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  .Navigation {
+    display: none;
+  }
+  .SideNav {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+  }
+}

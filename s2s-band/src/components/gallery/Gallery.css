@@ -1,0 +1,109 @@
+/*          import css from Bio.css          */
+
+/* @import url("../bio/Bio.css"); */
+
+.background {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Gallery {
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 20px;
+}
+
+hr {
+  background-color: white;
+  width: 40vw;
+  border-radius: 100%;
+  margin: 8px auto 25px auto;
+  height: 3px;
+}
+
+.carousel-root .carousel.carousel-slider {
+  max-width: 54vw;
+  margin: 0 auto;
+}
+
+.carousel * {
+  overflow: visible;
+}
+.carousel .thumbs {
+  padding-left: 0;
+}
+
+.carousel .control-next.control-arrow:before {
+  margin-top: 9px;
+}
+
+.carousel .thumbs-wrapper {
+  margin-top: 42px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.carousel .slider-wrapper {
+  margin-top: 10px;
+}
+
+.carousel-slider {
+  border: 4px white double;
+  -webkit-animation: blink 8s infinite alternate;
+  -moz-animation: blink 8s infinite alternate;
+  -ms-animation: blink 8s infinite alternate;
+  animation: blink 8s infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  100% {
+    border-color: red;
+  }
+}
+@-moz-keyframes blink {
+  100% {
+    border-color: red;
+  }
+}
+@-ms-keyframes blink {
+  100% {
+    border-color: red;
+  }
+}
+@keyframes blink {
+  100% {
+    border-color: red;
+  }
+}
+.carousel p.carousel-status {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel * {
+    overflow: hidden;
+  }
+  .resonsive-overflow * {
+    overflow: visible;
+  }
+
+  .Gallery {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  hr {
+    width: 60vw;
+  }
+
+  .carousel-root .carousel.carousel-slider {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  .carousel .control-next.control-arrow:before {
+    margin-top: 6px;
+  }
+  .carousel p.carousel-status{
+    font-size: 1em;
+  }
+}
