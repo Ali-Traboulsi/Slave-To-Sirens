@@ -1,0 +1,172 @@
+.wrapper-disc{
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.album-list-disc{
+    width: 15%;
+    margin: 2%;
+}
+
+.album-disc{
+    background-color: none !important;
+    width: 100%;
+    border-radius: 5%;
+    text-align: center;
+}
+
+select{
+    background: transparent;
+    background-color: rgba(225,225,225,0.3);
+    color: white;
+}
+
+// select option{
+//     background-color: rgba(225,225,225,0.1);
+
+// }
+
+.slider-disc {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    overflow: hidden;
+}
+
+.slide-disc{
+    min-width: 100%;
+    transition: 0.32s ease;
+    overflow: hidden;
+    }
+
+.react-player-disc {
+    // padding-left: 8.5%;
+    // padding-right: 5%;
+    // margin-left: 13.5%];
+    margin: 0 auto;
+}
+
+.player-wrapper-disc{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 360px;
+    margin-bottom: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.btn-disc{
+    position: relative;
+    // left: 60px;
+    border-radius: 50%;
+    background-image: url('../../images/logo.png');
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%, contain;
+    // height: 10%;
+    // width: 5%;
+    // border: 1px white double;
+    // border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    width: 30%;
+    height: 25%;
+    &:hover{
+        border: px red inset;
+        background-image: url('../../images/logo-red.png');
+        box-shadow: inset;
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(255,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(255,0,0,0.57);
+        transition: all 0.1s ease 0s;
+    }
+}
+
+#goLeft{
+    right: 10px;
+}
+    
+#goRight{
+    left: 10px;
+}
+
+.content-disc{
+    color: white;
+}
+
+.tracks-info-disc{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 262px;
+    padding-top: 2%;
+    line-height: 22.4px;
+    z-index: 1;
+}
+
+.right-info-disc{
+    width: 50%;
+}
+
+.left-info-disc{
+    width: 50%
+}
+
+.paragraph-info-disc{
+    text-align: center;
+    padding: 3%;
+    font-size: 19.2px;
+    line-height: 22.4px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .react-player-disc{
+        width: 80%;
+        max-width: 100%;
+    }
+    .btn-disc{
+        background-image: url('../../images/logo-black.png');
+        background-color: black;
+        z-index: 1;      
+        width: 560px;
+        height: 20%;
+        margin: 0;
+        position: relative;
+    }
+    #goLeft{
+        right: 0;
+    }
+    #goRight{
+        left: 0;
+    }
+    
+    hr{
+        width: 75vw;
+    }
+    
+    .album-list-disc{
+        width: 150px;
+        padding-bottom: 10%;
+    }
+
+    .tracks-info-disc{
+        height: 240px;
+    }
+
+    .paragraph-info-disc{
+        font-size: 25px;
+        line-height: 1em;
+    }
+
+}

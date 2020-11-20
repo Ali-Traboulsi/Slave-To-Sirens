@@ -1,5 +1,18 @@
 
-.resonsive-overflow *{
+.discography{
+    margin: 0 auto;
+    width: 900px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.slide-track-container{
     overflow: initial;
 }
 
+
+
+@media only screen and (max-width: 480px){
+    .main-title{
+        padding-top: 40px;
+    }
+}
