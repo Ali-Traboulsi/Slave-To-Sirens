@@ -1,0 +1,29 @@
+{
+  "name": "slave-to-sirens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd Server && npm start",
+    "client": "cd Client && npm start",
+    "start": "concurrently --kill-others-on-fail --names \"server,client\" \"npm run server\" \"npm run client\"",
+    "install": "cd Client && npm install && cd .. && cd Server && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ali-Traboulsi/Slave-To-Sirens.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ali-Traboulsi/Slave-To-Sirens/issues"
+  },
+  "homepage": "https://github.com/Ali-Traboulsi/Slave-To-Sirens#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
